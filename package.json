@@ -1,0 +1,12 @@
+{
+  "name": "agridrone",
+  "private": true,
+  "scripts": {
+    "server": "cd server && npm install && npm run dev",
+    "mobile": "cd mobile && npm install && npx expo start --web --port 3001",
+    "dev": "npx concurrently \"npm run server\" \"npm run mobile\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
